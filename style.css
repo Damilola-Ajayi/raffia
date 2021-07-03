@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: montserrat;
+}
+
+/* HEADER STYLING */
+
+.sub-header {
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5e6c59;
+    position: fixed;
+    top: 0;
+    padding: 1rem 3rem; 
+}
+
+/* HEADER H1 */
+.sub-header h1{
+    font-family: playball;
+    font-size: 2.5rem;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.625rem;
+}
+
+/* HEADER NAV */
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    margin-right: 0.625rem;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.625rem;
+    font-weight: 500;
+    margin-top: 0.9375rem;
+    font-size: 1.25rem;
+}
+
+/* EVERY OTHER ELEMENT BUT THE HEADER IS IN THE CONTAINER */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* DIV CONTAINS RAFFIA INTERIOR IMG AND TEXT AND ORDER NOW BUTTON*/
+.raffia-interior{
+    display: flex;
+    margin: 4.375rem;
+}
+
+
+.raffia-interior img{
+    width: 50%;
+    margin-top: 8rem;
+    border-radius: 50px;
+}
+
+/* RAFFIA INTERIOR H1 AND ORDER BUTTON */
+.raffia-interior-text{
+    width: 50%;
+    margin-right: 3.125rem;
+    margin-top: 17.5rem;
+}
+
+
+.raffia-interior-text h1{
+    font-size: 2.5rem;
+    color: #4d504c;
+}
+
+/* ORDER NOW BUTTON */
+.order{
+    outline: none;
+    border: 1px solid #c9a682;
+    background-color: #c9a682;
+    color: #292c28;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 30px 0 10px 100px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 1s ease;
+}
+
+.order:hover{
+    cursor: pointer;
+    background-color: #292c28;
+    border-color: mediumaquamarine;
+    color: white;
+    font-size: 17px;
+}
+
+/* RAFFIA FASHION H1 AND IMG */
+.raffia-fashion{
+    display: flex;
+    margin: 4.375rem;
+
+}
+
+.raffia-fashion h1{
+    width: 50%;
+    font-size: 3rem;
+    margin-left: 6.25rem;
+    margin-top: 12.5rem;
+    color: #4d504c;
+}
+
+.raffia-fashion img{
+    border-radius: 50px;
+}
+
+/* STYLING IS ON  */
+.text{
+    display: flex;
+    justify-content: center;
+    font-size: 1.875rem;
+    margin: 6rem 2rem;
+    color: #4d504c;
+}
+
+.home-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1.875rem;
+    row-gap: 3rem;
+    text-align: center;
+}
+
+
+.home-items-img {
+   box-shadow: 0px 1px 1px 1px rgba(51, 51, 51, 0.75);
+   transition: transform .30s linear;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+.home-items-img:hover{
+    transform: translateY(-20px);
+}
+
+.home-items-img a {
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+    color:#4d504c;
+}
+
+
+.fashion-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1.875rem;
+    row-gap: 4rem;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+.fashion-items-img{
+    box-shadow: 0px 1px 1px 1px rgba(51, 51, 51, 0.75);
+    transition: transform .30s linear;
+    cursor: pointer;
+    border-radius: 10px;
+}
+ 
+.fashion-items-img:hover{
+    transform: translateY(-20px);
+}
+
+.fashion-items-img a {
+    text-decoration: none;
+    /* font-style: italic; */
+    font-size: 27px;
+    font-weight: bold;
+    color: #4d504c;
+
+}
+
+#hat {
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+}
+
+
+.footer{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5e6c59;
+    width: 100%;
+    padding: 1.3rem 3rem;
+    margin-top: 40px;
+}
+
+.footer h1{
+    font-family: playball;
+    font-size: 2rem;
+    margin: 0.625rem;
+    display: inline-flex;
+    border: 2px solid #fff;
+    padding: 0.625rem;
+    
+}
+
+.icons {
+    display: inline-flex;
+    margin: 0.625rem;
+}
+
+.icons i {
+    margin: 0.625rem;
+}
+
+.sec-1{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+/* STYLING FOR DISPLAY PAGES BOXES */
+
+.display-pages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.875rem;
+    row-gap: 3rem;
+    text-align: center;
+    margin: 100px 0;
+    
+}
+
+.display-pages-img{
+    box-shadow: 0px 1px 1px 1px rgba(51, 51, 51, 0.75);
+    transition: transform .30s linear;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.display-pages-img:hover{
+    transform: translateY(-20px);
+}
+
+.back-btn{
+    border: 1px solid #c9a682;
+    background-color: #c9a682;
+    color: #292c28;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s ease;
+}
+
+.back-btn:hover{
+    cursor: pointer;
+    background-color: #4d504c;
+    color: white;
+    font-size: 22px;
+
+}
+
+/* a STYLING FOR PRODUCTS DISPLAY PAGES */
+
+#img-name{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight:500;
+    color:#313330;
+}
+
+/* a STYLING FOR PRODUCTS DISPLAY PAGES END */
+
+
+/* BAG STYLING */
+.bag{
+    margin-bottom: 133px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .sub-header{
+        padding: 5px 10px;
+        flex-direction: column;
+    }
+
+    .sub-header h1{
+        font-size: 1rem;
+        padding: 4px;
+        align-self: center;
+        margin-top: 4px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 4px;
+        font-weight: 400;
+        margin-top: 0.9375rem;
+        font-size: 12px;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+
+    .margin{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .raffia-interior{
+        flex-direction: column-reverse;
+        margin: 0;
+        width: 100%;
+    }
+
+    .raffia-interior img{
+        width: 100%;
+        margin-top: 5rem;
+        border-radius: 0;
+    }
+    
+    .raffia-interior-text{
+        margin: 0 auto;
+        margin-top: 2rem;
+        font-size: 20px;
+    }
+
+    .raffia-interior-text h1{
+       
+        font-size: 1rem;
+        color: #4d504c;
+    }
+
+    .order{
+        border-radius: 6px;
+        padding: 20px;
+        margin: 25px 0 0 25px;
+        font-size: 10px;
+        transition: 1s ease;
+    }
+    
+    .order:hover{
+        cursor: pointer;
+        background-color: mediumaquamarine;
+        border-color: mediumaquamarine;
+        color: white;
+        font-size: 12px;
+    }
+
+    .raffia-fashion{
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    .raffia-fashion img{
+        width: 100%;
+        height: 50%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .raffia-fashion h1{
+        /* width: 100%; */
+        font-size: 1rem;
+        color: #4d504c;
+        margin: 0 auto;
+        margin-top: 2rem;
+        font-size: 20px;
+        
+    }
+
+    .text{
+        font-size: 1rem;
+        margin: 2rem 2rem;
+    }
+
+    .home-items-img {
+        width: 100%;  
+        box-shadow: 0px 1px 1px 1px rgba(51, 51, 51, 0.75);
+        transition: transform .30s linear;
+        cursor: pointer;
+    }
+     
+    .home-items-img:hover{
+        transform: translateY(-20px);
+    }
+
+    .home-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 1rem;
+        row-gap: 2.5rem;
+        text-align: center;
+    }
+
+    .fashion-items-img{
+        width: 100%;
+    }
+
+    .home-items-img a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        color:#4d504c;
+    }
+
+    .fashion-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 1rem;
+        row-gap: 2.5rem;
+        text-align: center;
+    }
+
+    .fashion-items-img a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        color: #4d504c;
+    
+    }
+
+    .footer{
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        background-color: #5e6c59;
+        width: 100%;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .footer h1{
+        font-family: playball;
+        font-size: 1rem;
+        color: #fff;
+        border: 2px solid #fff;
+    
+    }
+
+    /*  STYLING FOR DISPLAY PAGES BOXES */
+    .display-pages{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 1rem;
+        row-gap: 2.5rem;
+        text-align: center;
+    }
+
+    #img-name{
+        font-size: 15px;
+        text-decoration: none;
+        font-weight:500;
+        color:#313330;
+    }
+
+    .back-btn{
+        padding: 15px 30px;
+        font-size: 15px;
+        font-weight: bold;
+        transition: 1s ease;
+    }
+    
+    .back-btn:hover{
+        cursor: pointer;
+        font-size: 20px;
+    
+    }
+
+    .bag{
+        margin: 0;
+    }
+
+    #hat{
+        margin-bottom: 2rem;
+    }
+
+    .page-name{
+        margin: 6rem 2rem 2rem 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -25,6 +25,7 @@ body{
     position: fixed;
     top: 0;
     padding: 1rem 3rem; 
+    z-index: 9999;
 }
 
 /* HEADER H1 */
